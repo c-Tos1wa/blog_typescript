@@ -1,12 +1,14 @@
-import Layout, { tituloSite } from '../components/layout'
+import Layout, { siteTitle } from '../components/layout'
+import Data from '../components/date'
+import NavBar from '../components/navbar'
 import Head from 'next/head'
 import Link from 'next/link'
-import Data from '../components/date'
 import { GetStaticProps } from 'next'
 import { getPostsByDate } from '../lib/posts'
+import styles from '../styles/home.module.css'
 
-export default function Home({ dadosDosPosts }: {
-  dadosDosPosts: {
+export default function Home({ posts }: {
+  posts: {
     date: string;
     title: string;
     id: string;
@@ -17,21 +19,22 @@ export default function Home({ dadosDosPosts }: {
   return (
     <Layout home>
       <Head>
-        <title>{tituloSite}</title>
+        <title>{siteTitle}</title>
       </Head>
-      <section>
-        <p>Olá, como você está? <br />Neste blog vou escrever sobre
-          os projetos em andamento - porque projeto é algo que está sempre
-          em andamento - gostos, ideias e como me encontrar nesse mundão 
-          chamado internet.
+      <NavBar />
+      <section className={styles.text}>
+        <p>Olá! <br />Neste blog vou escrever sobre
+          os projetos em andamento (porque projeto está sempre 
+          em andamento), aprendizados e hobbies. <br/>
+          Conheça meu <a target='_blank' href="https://www.linkedin.com/in/cristina-iwassaki/">Linkedin</a>
         </p>
       </section>
       <section>
-        <h2>Blog</h2>
+        <h2 className={styles.blog}>Blog</h2>
         <ul>
           {
-            dadosDosPosts.map( ({id, date, title}) => (
-              <li key={id}>
+            posts.map( ({id, date, title}) => (
+              <li className={styles.name} key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
@@ -43,17 +46,16 @@ export default function Home({ dadosDosPosts }: {
             ))
           }
         </ul>
-
       </section>
     </Layout>
   )
 }
 
 export const getStaticProps: GetStaticProps = async() => {
-  const dadosDosPosts = getPostsByDate();
+  const posts = getPostsByDate();
   return{
     props: {
-      dadosDosPosts
+      posts
     }
   }
   

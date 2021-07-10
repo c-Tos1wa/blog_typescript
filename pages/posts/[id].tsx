@@ -3,6 +3,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import Layout from '../../components/layout'
 import Data from '../../components/date'
 import { getIds, getPostsText } from '../../lib/posts'
+import styles from '../../styles/post.module.css'
 
 export default function Post( {
   postIdentifier
@@ -16,11 +17,11 @@ export default function Post( {
   return(
     <Layout>
       <Head>
-        <title>{postIdentifier.title}</title>
+        <title className={styles.title}>{postIdentifier.title}</title>
       </Head>
-      <article>
+      <article className={styles.text}>
         <h1>{postIdentifier.title}</h1>
-        <div>
+        <div className={styles.date}>
           <Data dataString = {postIdentifier.date} />
         </div>
         <div dangerouslySetInnerHTML={{__html: postIdentifier.textHtml}} />
