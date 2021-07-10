@@ -7,7 +7,7 @@ export default function Projects(){
     <h2 className={styles.title}>Projetos</h2>
     <p className={styles.text}>
       Este espaço será dedicado aos projetos que já tem repositório no Github, por isso,
-      além da descrição de cada um deles, também vai estar disponível o código.
+      além da descrição de cada um deles, também será possívelacessar seu código.
       Lista de repositórios
     </p>
 
