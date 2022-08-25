@@ -23,10 +23,8 @@ export default function Home({ posts }: {
       </Head>
       <NavBar />
       <section className={styles.text}>
-        <p>Olá! <br />Neste blog vou escrever sobre
-          os projetos em andamento (porque projeto está sempre 
-          em andamento), aprendizados e hobbies. <br/>
-          Conheça meu <a target='_blank' href="https://www.linkedin.com/in/cristina-iwassaki/">Linkedin</a>
+        <p>
+           
         </p>
       </section>
       <section>

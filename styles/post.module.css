@@ -1,9 +1,11 @@
 
 .text {
-  font-size: 20px;
+  font-size: 1.4em;
+  color: #2c363f;
   padding: 10px;
 }
 
 .date{
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 0.95em;
 }

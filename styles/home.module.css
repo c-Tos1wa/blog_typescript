@@ -1,13 +1,16 @@
 .text{
-  font-size: 1.7em;
-  text-align: center;
+  font-size: 1.8em;
+  text-align: center
 }
 
 .blog{
-  margin-top: 10px;
+  color: #32174d;
+  text-decoration: underline;
+  font-size: 1.7em;
+  margin-top: 20px;
 }
 
 .name{
-  font-size: 20px;
+  font-size: 1.3em;
   padding: 10px;
 }

@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html, body{
-  font-family: "Lobster";
+  font-family: "Courgette", cursive;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #192f7c;
 }
 
 

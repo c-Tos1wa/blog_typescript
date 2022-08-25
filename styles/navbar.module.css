@@ -1,10 +1,12 @@
 .navbar{
   font-size: 30px;
   margin-top: 5px;
+  color: #e75480;
 }
 
 
 .anchor{
-  margin-right: 15px;
-  color: #B03060;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #e75480;
 }

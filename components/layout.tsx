@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/layout.module.css'
+import { RiArrowGoBackFill } from 'react-icons/ri'
 
 const name = 'Cristina Toshie Iwassaki'
 export const siteTitle = 'Blog de Projetos'
@@ -52,7 +53,9 @@ export default function Layout(
         !home && (
           <div className={styles.footer}>
             <Link href='/'>
-              <a>← Voltar ao início</a>
+              <a className={styles.goBack}>
+                <RiArrowGoBackFill /> Voltar ao início
+              </a>
             </Link>
           </div>
         )
