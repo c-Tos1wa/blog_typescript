@@ -1,11 +1,12 @@
 .profile {
   border-radius: 900px;
-  margin:60px;
+  margin: 60px;
+  padding: 40px;
 }
 
 .name{
   color: #8B008B;
-  margin: 20px 0 8px 0;
+  margin: 10px 0 8px 0;
 }
 
 .footer{

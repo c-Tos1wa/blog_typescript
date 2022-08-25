@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from '../styles/layout.module.css'
 
 const name = 'Cristina Toshie Iwassaki'
-export const siteTitle = 'Cristina Iwassaki: Estudante de Front-End'
+export const siteTitle = 'Blog de Projetos'
 
 export default function Layout(
     {children, home}: {children: React.ReactNode, home?: boolean}
@@ -15,7 +15,7 @@ export default function Layout(
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
-          name="Cristina Iwassaki"
+          name="Cristina Toshie Iwassaki"
           content="Página pessoal com informações, projetos, etc"
         />
         <meta
@@ -29,7 +29,8 @@ export default function Layout(
       </Head>
 
       <header>
-        {home ?  
+        {
+          home ?  
         (
           <>
             <Image className={styles.profile}
