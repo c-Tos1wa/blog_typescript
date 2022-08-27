@@ -1,6 +1,15 @@
 .text{
-  font-size: 1.8em;
-  text-align: center
+  font-size: 1.3em;
+  text-align: justify;
+  padding: 0.8em 2em 0 2em;
+}
+
+.text p{
+  text-indent: 2em;
+}
+
+.text span{
+  font-weight: 400;
 }
 
 .blog{

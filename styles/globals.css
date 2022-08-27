@@ -13,6 +13,7 @@
 html, body{
   font-family: "Courgette", cursive;
   text-align: center;
+  font-weight: 100;
 }
 
 a {
