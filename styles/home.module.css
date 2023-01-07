@@ -1,7 +1,10 @@
 .text{
   font-size: 1.3em;
-  text-align: justify;
+  text-align: start;
   padding: 0.8em 2em 0 2em;
+  display: flex;
+  gap: 2rem;
+   
 }
 
 .text p{
