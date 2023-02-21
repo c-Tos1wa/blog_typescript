@@ -1,11 +1,17 @@
+.text h1{
+  text-align: start;
+  margin-top: 1.4em;
+  color: #0f5257;
+}
 
 .text {
   font-size: 1.4em;
-  color: #2c363f;
-  padding: 10px;
+  padding: 0 3.5em 3em 3.5em;
+  text-align: justify;
 }
 
 .date{
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   font-size: 0.95em;
+  color: #0f5257;
 }

@@ -1,6 +1,5 @@
 import Layout, { siteTitle } from '../components/layout'
 import Data from '../components/date'
-import NavBar from '../components/navbar'
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
@@ -21,44 +20,35 @@ export default function Home({ posts }: {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <NavBar />
       <section className={styles.text}>
-        <div className={styles.division}>
+        <div>
           <p>
             Formou-se em Física Médica pela Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp)
             campus de Botucatu, onde conheceu algoritmo e lógica de programação.
-          </p>
-          <p>
             Após a faculdade, estudou para concursos públicos, sem muito sucesso, mas, por curiosidade, se manteve
             atualizada nas novas tecnologias.
+          </p>
+          <p>
             Achou interessante como os dados poderiam ser utilizados para criar padrões, detectar anomalias e predizer resultados
             por isso, se interessou em ciência de dados.
           </p>
-          <p>
-            Durante a pandemia, começou estudando Python, mas foi redirecionada ao desenvolvimento web, mais precisamente
-            ao Fullstack em Node.
-          </p>
         </div>
-        <div className={styles.division}>
+        <div>
           <p>
-            Conhece, no back-end, Express, Nest.Js e as ORM Prisma e Sequelize, além de MySQL e Postgres como 
-            banco de dados. No front-end, React.Js, Next.Js e básico de Angular.Js, além de frameworks, como Bootstrap, Material-UI e Chakra-UI.
+            Durante a pandemia, estudou desenvolvimento web e conhece, no back-end, Express, Nest.Js e as ORM Prisma e Sequelize, além de MySQL e Postgres como 
+            banco de dados. No front-end, React.Js, Next.Js e básico de Angular.Js, além de Bootstrap, Material-UI, Chakra-UI e styled-components.
           </p>
           <p>
-            Para se manter atualizada, continua estudando as bibliotecas e frameworks do Javascript e em paralelo,
-            tenta criar portfólio relacionado a dados, estatística e ciência de dados.
-          </p>
-          <p>
-            Este blog será direcionado aos projetos publicados no Github.
+            Atualmente, estuda Python direcionado à análise e ciência de dados.
           </p>
         </div>
       </section>
-      <section>
-        <h2 className={styles.blog}>Blog</h2>
+      <section className={styles.projects}>
+        <h2 className={styles.blog}>Portfólio</h2>
         <ul>
           {
             posts.map( ({id, date, title}) => (
-              <li className={styles.name} key={id}>
+              <li className={styles.post} key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>

@@ -2,11 +2,12 @@ import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from './navbar'
 import styles from '../styles/layout.module.css'
-import { RiArrowGoBackFill } from 'react-icons/ri'
+import { BsArrowLeft } from 'react-icons/bs'
 
 const name = 'Cristina Toshie Iwassaki'
-export const siteTitle = 'Blog de Projetos'
+export const siteTitle = 'Portfólio de Projetos'
 
 export default function Layout(
     {children, home}: {children: React.ReactNode, home?: boolean}
@@ -33,15 +34,18 @@ export default function Layout(
         {
           home ?  
         (
-          <>
+          <div className={styles.header}>
             <Image className={styles.profile}
               priority
               src='/images/cris.jpg'
-              height={144}
-              width={144}
+              height={200}
+              width={200}
               alt={name} />
-            <h1 className={styles.name}>{name}</h1>
-          </>
+            <div className={styles.about}>
+              <h1 className={styles.name}>{name}</h1>
+              <Navbar />
+            </div>
+          </div>
         ):(
           <></>
         )}
@@ -54,7 +58,7 @@ export default function Layout(
           <div className={styles.footer}>
             <Link href='/'>
               <a className={styles.goBack}>
-                <RiArrowGoBackFill /> Voltar ao início
+                <BsArrowLeft /> Voltar ao início
               </a>
             </Link>
           </div>

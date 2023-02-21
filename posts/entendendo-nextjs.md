@@ -1,7 +1,9 @@
 ---
-title: "Entendendo Next.js e aplicando suas funcionalidades"
+title: "Next.Js e este portfólio"
 date: "2020-03-09"
 ---
+
+<!-- Como post inicial deste blog/portfólio não poderia deixar de explicar como foi feito -->
 
 Next.js é um framework para React. O que isso quer dizer? O React é uma biblioteca Javascript para construção de interfaces e o Next é considerado um framework pois adiciona várias funcionalidades em cima do React.
 

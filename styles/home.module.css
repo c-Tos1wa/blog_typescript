@@ -1,28 +1,29 @@
 .text{
   font-size: 1.3em;
-  text-align: start;
   padding: 0.8em 2em 0 2em;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
    
 }
 
 .text p{
-  text-indent: 2em;
+  text-indent: 18px;
 }
 
-.text span{
-  font-weight: 400;
+.projects {
+  text-align: center;
 }
 
 .blog{
-  color: #32174d;
+  color: #0f5257;
   text-decoration: underline;
   font-size: 1.7em;
-  margin-top: 20px;
+  margin-top: 2em;
 }
 
-.name{
+.post{
   font-size: 1.3em;
-  padding: 10px;
+  padding: 10px 0 15px 0;
 }
